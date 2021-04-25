@@ -13,6 +13,7 @@ RUN tlmgr install \
  arydshln \
  etextools \
  fontawesome5 \
+ ifmtarg \
  latexmk \
  moderncv \
  multirow \
