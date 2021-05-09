@@ -7,7 +7,7 @@ WORKDIR /
 RUN apt-get update && apt-get -y install python3
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 
-RUN tlmgr update --self
+RUN tlmgr update --self skipcache
 RUN tlmgr install \
  academicons \
  arydshln \
@@ -18,4 +18,5 @@ RUN tlmgr install \
  moderncv \
  multirow \
  texliveonfly\
- xpatch
+ xpatch \
+ xstring
