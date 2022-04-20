@@ -3,7 +3,7 @@
 Basic Ubuntu-based Docker image with the necessary to build CV with LaTeX and moderncv
 
 # Dependencies
-This image is based on https://hub.docker.com/r/pandoc/ubuntu-latex with some extra dependencies: 
+This image is based on https://hub.docker.com/r/pandoc/latex with some extra dependencies: 
 - `python3`: required for `texliveonfly`
 - `moderncv`: a modern curriculum vitae https://www.ctan.org/pkg/moderncv
 - `fontawesome5`: a collection of icons ready to be used in any LaTeX document https://www.ctan.org/pkg/fontawesome5

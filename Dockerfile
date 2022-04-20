@@ -1,4 +1,4 @@
-FROM pandoc/ubuntu-latex
+FROM pandoc/latex:latest-ubuntu
 
 LABEL maintainer="Jimmy Chu (chujimmy)"
 
