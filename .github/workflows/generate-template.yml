@@ -22,7 +22,6 @@ jobs:
         with:
           context: .
           push: false
-          tags: ${{env.CONTAINER_NAME}}/${{ github.head_ref }}:latest
       - name: Run Docker image
         id: docker_run
         run: docker run -d --name $CONTAINER_NAME -t ${{ steps.docker_build.outputs.digest }}
