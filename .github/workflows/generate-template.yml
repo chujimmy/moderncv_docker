@@ -29,7 +29,7 @@ jobs:
         id: latex_build
         run: |
           docker cp template/ $CONTAINER_NAME:/data/template/
-          docker exec -t $CONTAINER_NAME latexmk -pdf -interaction=nonstopmode -recorder -cd /data/template/template.tex
+          docker exec -t $CONTAINER_NAME latexmk -pdf -halt-on-error -interaction=nonstopmode -recorder -cd /data/template/template.tex
           docker cp $CONTAINER_NAME:/data/template/template.pdf ./template/template.pdf
       - name: Upload CV
         uses: actions/upload-artifact@v2
