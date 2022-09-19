@@ -39,4 +39,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/chujimmy/moderncv_docker:latest,ghcr.io/chujimmy/moderncv_docker:${{ steps.create_tag.outputs.new_tag }}
+          tags: ghcr.io/chujimmy/moderncv:latest,ghcr.io/chujimmy/moderncv:${{ steps.create_tag.outputs.new_tag }}
